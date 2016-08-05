@@ -1,0 +1,10 @@
+section.text-block{
+
+	&.text-block--blue{
+		background: $primary-color;
+
+		*{
+			color: $white;
+		}
+	}
+}

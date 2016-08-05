@@ -1,0 +1,51 @@
+section.hero{
+    background-color: $footer-gray;
+    padding: 165px 0 200px 0;
+    border-bottom: none;
+    overflow: hidden; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    h1{
+        color: $white;
+    }
+
+    h3{
+        margin-bottom: 0;
+    }
+
+    &.hero--tall{
+        padding: 320px 0;
+
+        @include mobile{
+            padding: 165px 0;
+        }
+    }
+
+    .row{
+        position: relative;
+        z-index: 2;
+    }
+
+    .filter{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.6;
+    }
+
+    #bgvid{
+        position: absolute;
+        right: 0;
+        top: 0;
+        min-width: 100%;
+        min-height: 700px;
+        width: auto;
+        z-index: 0;
+    }
+}

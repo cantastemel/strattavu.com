@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,300,500');
+@import url("../foundation-icons/foundation-icons.css");
+
+$sans-serif: 'Poppins', 'Helvetica Neue', Helvetica, Arial sans-serif;
+ 
+body{
+	font-family: $sans-serif;
+	color: $body-color;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+p{
+	margin-bottom: 30px;
+}
+
+h1{ 
+	color: $title-color;
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-bottom: 20px;
+}
+
+h2{
+	font-size: 36px;
+	font-weight: 300;
+	color: $title-color;
+	margin-bottom: 30px;
+	line-height: 1.4;
+}
+
+h3{
+	color: $white;
+	font-size: 22px;
+	font-weight: 300;
+	margin-bottom: 45px;
+}
+
+a{
+	text-decoration: none;
+	color: $primary-color;
+	@include transition(opacity 0.3s ease-in-out);
+
+	&:hover{
+		opacity: 0.7;
+	}
+}
+
+ul,ol{
+	margin-bottom: 40px;
+}
+
+strong{
+	font-weight: 500;
+}
+
+form *{
+	font-family: $sans-serif;
+}
+
+

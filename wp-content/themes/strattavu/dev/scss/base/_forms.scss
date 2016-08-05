@@ -1,0 +1,164 @@
+// Basic Form Elements
+form{
+
+	select,
+	input,
+	textarea {
+	    color: $body-color;
+	    font-size: 16px;
+	    border: 1px solid $divider-gray;
+	    padding: 8px 15px;
+	    width: 100%;
+	    border-radius: 2px;
+		&::-webkit-input-placeholder {
+		   color: #c6cbcf;
+		}
+
+		&:-moz-placeholder {
+		   color: #c6cbcf;  
+		}
+
+		&::-moz-placeholder { 
+		   color: #c6cbcf;  
+		}
+
+		&:-ms-input-placeholder {  
+		   color: #c6cbcf;  
+		}
+	}
+
+	textarea {
+	    resize: vertical;
+	    border-color: $divider-gray;
+	}
+
+	input[type="text"]::-ms-clear {
+	    display: none;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+	    margin-right: 10px;;
+	    height:auto !important;
+	    & + label {
+	        font-weight: normal;
+	    }
+	}
+
+	input[type="submit"],
+	button[type="submit"] {
+	    @extend .btn; 
+	}
+
+	label {
+		color: $body-color;
+	    font-size: 16px;
+	    margin-bottom: 10px;
+	    display: inline-block;
+	    vertical-align: top; 
+	    cursor: pointer;
+
+	    small {
+	        font-size: 14px;
+	        margin-left:1em;
+	        color: $divider-gray;
+	    }
+	}
+
+	fieldset {
+	    margin-left: 0;
+	    margin-right: 0;
+	    padding: 20px;
+	    border-color: $divider-gray;
+	}
+
+	legend {
+	    font-size: 18px;
+	    padding: 0 0.8em;
+	    color: #000;
+	}
+}
+.ninja-forms-cont {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.ninja-forms-form-wrap{
+
+	@include desktop{
+		max-width: 500px;	
+	}
+	
+
+	.ninja-forms-form{
+		label{
+			font-weight: normal;
+		}
+
+		input, textarea{
+			width: 100%;
+			max-width: 98%;
+		}
+
+		.submit-wrap{
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		input[type="submit"]{
+			display: inline-block;
+			width: initial;
+			@extend .btn; 
+			@extend .btn--ghost-blue;
+
+			cursor: pointer;
+		}
+
+
+		.field-wrap{
+			position: relative;
+			margin-bottom: 5px;
+		}
+
+		.ninja-forms-req-symbol{
+			color: $primary-color;
+			position: absolute;
+			left: -10px;
+			top: 15px;
+		}
+
+		.ninja-forms-field-error{
+			font-size: 12px;
+			padding-left: 10px;
+			margin-bottom: 10px;
+			margin-top: 5px;
+		}
+
+	}
+	
+
+	.ninja-forms-required-items{
+		display: none;
+	}	
+
+	.ninja-forms-error-msg{
+		color: red;
+    	border: 1px solid red;
+    	border-radius: 2px;
+    	text-align: center;
+	    padding: 10px;
+	    margin-bottom: 20px;
+	    font-size: 14px;
+	    margin-left: 10px;
+
+    	*{
+    		margin: 0;
+    	}
+	}
+
+	.ninja-forms-success-msg{
+	    border: 2px solid green;
+	    text-align: center;
+	    color: green;
+	}
+}

@@ -1,0 +1,129 @@
+// ===== UTILITY =====
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.small-text{
+	font-size: 14px;
+}
+
+.toggle-fixed{
+	position: fixed !important;
+}
+
+.blue{
+	color: $primary-color;
+}
+
+.only-sm{
+	display: initial;
+
+	@include tablet{
+		display: none;
+	}
+}
+
+.only-tablet{
+	display: none;
+
+	@include tablet{
+		display: initial;
+	}
+
+	@include desktop{
+		display: none;
+	}
+}
+
+.only-desktop{
+	display: none;
+
+	@include tablet{
+		display: none;
+	}
+
+	@include desktop{
+		display: initial;
+	}
+}
+
+.tablet-up{
+	display: none;
+
+	@include tablet{
+		display: initial;
+	}
+}
+
+.no-pad-b{
+	padding-bottom: 0;
+}
+
+.no-pad-t{
+	padding-top: 0;
+}
+
+.no-pad-l{
+	padding-left: 0;
+}
+
+.no-pad-r{
+	padding-r: 0;
+}
+
+.no-pad{
+	padding: 0;
+}
+
+// ===== COMMON ELEMENTS =====
+.btn{
+	display: inline-block;
+	padding: 11px 50px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1;
+	border-radius: 100px;
+	@include transition(all 0.3s ease-in-out);
+
+	&:hover{
+		opacity: 1;
+	}
+
+
+	&.btn--ghost-white{
+		border: 1px solid $white;
+		background: none;
+		color: $white;
+		&:hover{
+			background: $white;
+			color: $primary-color;
+		}
+	}
+
+	&.btn--ghost-blue{
+		border: 1px solid $primary-color;
+		background: none;
+		color: $primary-color;
+		&:hover{
+			background: $primary-color;
+			color: $white;
+		}
+	}
+
+}

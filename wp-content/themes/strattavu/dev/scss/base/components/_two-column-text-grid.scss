@@ -1,0 +1,27 @@
+section.two-column-text-grid{
+	text-align: center;
+
+	h2.section-title{
+		margin-bottom: 100px;
+	}
+
+	.text-grid--column{
+		.text-grid--content{
+			padding: 10px;
+		}
+
+		h1{
+			font-size: 24px;
+			font-weight: 300;
+			color: $title-color;
+			margin-bottom: 0;
+		}
+		
+		h2{
+			font-size: 16px;
+			font-weight: 300;
+			color: $primary-color;
+			margin-bottom: 20px;
+		}
+	}
+}

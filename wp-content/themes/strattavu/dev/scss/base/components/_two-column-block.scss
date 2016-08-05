@@ -1,0 +1,101 @@
+section.two-column-block{
+	text-align: center;
+
+	@include desktop{
+		text-align: left;
+	}
+
+	// &:nth-child(odd){
+	// 	.section-columns{
+	// 		.section-columns--column{
+	// 			@include desktop{
+	// 				&.column-img{
+	// 					order: 1;
+	// 					text-align: right;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	.section-columns{
+		display: -webkit-flex;
+    	display: flex;
+    	align-items: center;
+    	flex-direction: column;
+        -webkit-justify-content: space-between;
+  		justify-content: space-between;
+    	@include desktop{
+    		flex-direction: row;
+    	}
+
+
+    	.section-columns--column{
+			width: 100%;
+			display: table-cell;
+			vertical-align: middle;
+			margin-bottom: 40px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			@include desktop{
+				width: 50%;
+				margin-bottom: 0;
+			}
+
+			&.column-text{
+				order: 1;
+
+				@include desktop{
+					order: initial;
+				}
+			}
+
+			&.column-img{
+				order: 0;
+				text-align: center;
+				margin-bottom: 40px;
+				
+				@include desktop{
+					margin-bottom: 0;
+				}
+
+				&:first-child{
+					@include desktop{
+						text-align: left;
+
+						img.push-down{
+							position: absolute;
+							bottom: -100px;
+							left: 0;
+						}
+					}
+				}
+
+				&:last-child{
+					@include desktop{
+						text-align: right;
+
+						img.push-down{
+							position: absolute;
+							bottom: -100px;
+							right: 0;
+						}
+					}
+				}
+
+			}
+
+			
+    	}
+	}
+}
+
+// Special Case
+body.about section.two-column-block .section-columns .section-columns--column.column-img:first-child img.push-down{
+	@include desktop{
+		left: 10%;
+	}
+}

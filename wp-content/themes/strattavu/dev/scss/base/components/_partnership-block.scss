@@ -1,0 +1,26 @@
+section.partnership-block{
+    padding: 100px 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    *{
+        color: $white;
+    }
+
+    .section-icon{
+        width: 75px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+        img{
+            
+        }
+    }
+
+    .columns{
+        @include desktop{
+            padding: 0;
+        }
+    }
+}
