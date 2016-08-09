@@ -2,7 +2,7 @@
             <div class="row footer-utility">
                 <div class="large-12 columns">
                     <div class="branding">
-                        <a href="#" class="footer-logo"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo_white@2x.png" alt="Strattavu Logo" width="150" height="auto"></a>   
+                        <a href="#" class="footer-logo"><img src="<?php bloginfo('template_url'); ?>/assets/img/strattavu_logo_footer@2x.png" alt="Strattavu Logo" width="150" height="auto"></a>   
                     </div>
                 </div>
             </div>
