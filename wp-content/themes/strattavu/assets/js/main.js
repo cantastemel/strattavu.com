@@ -156,8 +156,8 @@ $(document).ready(function() {
             var marker = new google.maps.Marker({
                 position: center,
                 animation: google.maps.Animation.DROP,
-                map: map
-                //icon: '/wp-content/themes/mecovery/assets/img/map_pin@2x.png'
+                map: map,
+                icon: '/wp-content/themes/strattavu/assets/img/map_pin.png'
             });
 
             marker.addListener('click', function() {
